@@ -1,29 +1,43 @@
 <div class="container">
 
   {{zog-jumbo}}
-  
+
     <div class="card text-xs-center">
       <div class="card-header">
         Featured
       </div>
       <div class="card-block">
-        <h4 class="card-title">Special title treatment</h4>
-        <p class="card-text">
-          With supporting text below as a natural lead-in to additional content.
-        </p>
-        <p class="test">
-          red from app.scss
-        </p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-      <div class="card-footer text-muted">
-      2 days ago
       </div>
     </div>
 
     <div class="card-deck-wrapper">
       <div class="card-deck">
 
+        {{#each model as |card|}}
+        <div class="card">
+          <div class="card-header">
+            {{card.title}}
+          </div>
+          <div class="card-block">
+            <h4 class="card-title">Special title treatment</h4>
+            <p class="card-text">
+              {{card.text}}
+            </p>
+            <p class="red">
+              red from app.scss
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+          <div class="card-footer text-muted small">
+            {{card.footer}}
+          </div>
+        </div><!-- end card -->
+        {{/each}}
+
+      </div><!-- end card deck -->
+    </div><!-- end card deck wrapper -->
+
+{{!--
         <div class="card">
           <div class="card-header">
             Card Title
@@ -120,5 +134,6 @@
         </div>
       </div>
     </div>
+--}}
 
   </div><!-- end container -->

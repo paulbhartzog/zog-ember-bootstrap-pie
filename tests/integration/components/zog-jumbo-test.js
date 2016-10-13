@@ -11,14 +11,18 @@ test('it renders', function(assert) {
 
   this.render(hbs`{{zog-jumbo}}`);
 
-  assert.equal(this.$().text().trim(), '');
-
   // Template block usage:
   this.render(hbs`
     {{#zog-jumbo}}
-      template block text
+    Hello, world!
+      This is a simple hero unit, a simple jumbotron-style component for calling extra ate block texttention to featured content or information.
+
+      It uses utility classes for typography and spacing to space content out within the larger container.
+
+        Learn more
     {{/zog-jumbo}}
   `);
 
-  assert.equal(this.$().text().trim(), 'template block text');
+  assert.equal(this.$().text().trim(), '');
+
 });

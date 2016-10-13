@@ -1,6 +1,6 @@
 @import "bootstrap";
 
-.test {
+.red {
   color:red;
 }
 
@@ -8,7 +8,4 @@ body {
   /* do not extend under fixed navbars on load */
   padding-top: 6rem;
   padding-bottom: 6rem;
-
-  /* for scrollspy */
-  position: relative;
 }
