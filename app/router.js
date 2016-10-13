@@ -7,6 +7,13 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('home');
+  this.route('about');
+  this.route('music');
+  this.route('lego');
+  this.route('author');
+  this.route('code');
+  this.route('futurist');
 });
 
 export default Router;
