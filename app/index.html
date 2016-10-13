@@ -16,17 +16,19 @@
   </head>
   <body>
 
-    <nav class="navbar navbar-fixed-top bg-faded navbar-dark bg-inverse">
-      <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar" aria-controls="exCollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation">
+    <nav id="primary-navbar" class="navbar navbar-fixed-top navbar-light bg-faded" role="navigation">
+      <button class="navbar-toggler hidden-sm-up" type="button"
+       data-toggle="collapse" data-target="#exCollapsingNavbar"
+        aria-controls="exCollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation">
         &#9776;
       </button>
       <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar">
         <a class="navbar-brand" href="#">Paul B. Hartzog</a>
         <div class="nav navbar-nav">
-          <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="#">About</a>
-          <a class="nav-item nav-link" href="#">Academic</a>
-          <a class="nav-item nav-link" href="#">Future</a>
+          <a class="nav-item nav-link active" href="#home">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="#about">About</a>
+          <a class="nav-item nav-link" href="#academic">Academic</a>
+          <a class="nav-item nav-link" href="#future">Future</a>
           <a class="nav-item nav-link" href="#">Code</a>
           <a class="nav-item nav-link" href="#">Music</a>
           <a class="nav-item nav-link" href="#">Lego</a>
@@ -35,9 +37,12 @@
       </div>
     </nav>
 
-    <div class="container">
+    <div class="container" data-spy="scroll" data-target="#primary-navbar">
+
 
     {{content-for "body"}}
+
+<h3 id="home">asdf</h3><i class="fa fa-first-order" aria-hidden="true"></i>
 
     <div class="jumbotron">
       <h1 class="display-3">Hello, world!</h1>
@@ -48,6 +53,8 @@
         <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
       </p>
     </div>
+
+<h3 id="about">asdf</h3>(<span class="active">active</span>)
 
     <div class="card text-xs-center">
       <div class="card-header">
@@ -68,6 +75,9 @@
       </div>
     </div>
 
+<h3 id="academic">asdf</h3>
+
+
     <div class="card-deck-wrapper">
       <div class="card-deck">
 
@@ -164,58 +174,6 @@
             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
             <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
           </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="alert alert-success" role="alert">
-      <strong>Well done!</strong> You successfully read this important alert message.
-    </div>
-    <div class="alert alert-info" role="alert">
-      <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
-    </div>
-    <div class="alert alert-warning" role="alert">
-      <strong>Warning!</strong> Better check yourself, you're not looking too good.
-    </div>
-    <div class="alert alert-danger" role="alert">
-      <strong>Oh snap!</strong> Change a few things up and try submitting again.
-    </div>
-
-    <div id="accordion" role="tablist" aria-multiselectable="true">
-      <div class="panel panel-default">
-        <div class="panel-heading" role="tab" id="headingOne">
-          <h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              Collapsible Group Item #1
-            </a>
-          </h4>
-        </div>
-        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-        </div>
-      </div>
-      <div class="panel panel-default">
-        <div class="panel-heading" role="tab" id="headingTwo">
-          <h4 class="panel-title">
-            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              Collapsible Group Item #2
-            </a>
-          </h4>
-        </div>
-        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-        </div>
-      </div>
-      <div class="panel panel-default">
-        <div class="panel-heading" role="tab" id="headingThree">
-          <h4 class="panel-title">
-            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              Collapsible Group Item #3
-            </a>
-          </h4>
-        </div>
-        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
         </div>
       </div>
     </div>
@@ -230,6 +188,7 @@
     <script src="{{rootURL}}assets/zog-ember-bootstrap-pie.js"></script>
 
   </div><!-- end container -->
+
 
   </body>
 </html>
