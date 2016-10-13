@@ -17,19 +17,27 @@
   <body>
 
     <nav class="navbar navbar-fixed-top bg-faded navbar-dark bg-inverse">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <div class="nav navbar-nav">
-        <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-        <a class="nav-item nav-link" href="#">Features</a>
-        <a class="nav-item nav-link" href="#">Pricing</a>
-        <a class="nav-item nav-link" href="#">About</a>
+      <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar" aria-controls="exCollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        &#9776;
+      </button>
+      <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar">
+        <a class="navbar-brand" href="#">Paul B. Hartzog</a>
+        <div class="nav navbar-nav">
+          <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="#">About</a>
+          <a class="nav-item nav-link" href="#">Academic</a>
+          <a class="nav-item nav-link" href="#">Future</a>
+          <a class="nav-item nav-link" href="#">Code</a>
+          <a class="nav-item nav-link" href="#">Music</a>
+          <a class="nav-item nav-link" href="#">Lego</a>
+          <a class="nav-item nav-link" href="#">Writing</a>
+        </div>
+        <form class="form-inline pull-xs-right">
+          <input class="form-control" type="text" placeholder="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
       </div>
-      <form class="form-inline pull-xs-right">
-        <input class="form-control" type="text" placeholder="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
     </nav>
-
 
     <div class="container">
 
@@ -154,6 +162,19 @@
       </div>
     </div>
 
+    <div class="alert alert-success" role="alert">
+      <strong>Well done!</strong> You successfully read this important alert message.
+    </div>
+    <div class="alert alert-info" role="alert">
+      <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+    </div>
+    <div class="alert alert-warning" role="alert">
+      <strong>Warning!</strong> Better check yourself, you're not looking too good.
+    </div>
+    <div class="alert alert-danger" role="alert">
+      <strong>Oh snap!</strong> Change a few things up and try submitting again.
+    </div>
+    
     <nav class="navbar navbar-fixed-bottom navbar-light bg-faded">
       <a class="navbar-brand" href="#">Fixed bottom</a>
     </nav>
