@@ -9,7 +9,7 @@
         <div class="card-wrapper col-lg-4">
           <div class="card">
             <div class="card-header">
-              {{card.title}}
+              <h5>{{card.title}}</h5>
             </div>
             <div class="card-block">
               <h4 class="card-title">Special title treatment</h4>
@@ -19,7 +19,7 @@
               <p class="red">
                 red from app.scss
               </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              {{#link-to card.link class="btn btn-primary"}}{{card.link}}{{/link-to}}
             </div>
             <div class="card-footer text-muted small">
               {{card.footer}}

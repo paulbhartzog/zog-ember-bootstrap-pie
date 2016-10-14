@@ -1,11 +1,15 @@
 @import "bootstrap";
 
-.red {
-  color:red;
-}
-
 body {
   /* do not extend under fixed navbars on load */
   padding-top: 6rem;
   padding-bottom: 6rem;
+}
+
+.red {
+  color:red;
+}
+
+.card-wrapper {
+  margin-bottom:2rem;
 }
