@@ -6,24 +6,27 @@
       <div class="card-deck">
 
         {{#each model as |card|}}
-        <div class="card">
-          <div class="card-header">
-            {{card.title}}
-          </div>
-          <div class="card-block">
-            <h4 class="card-title">Special title treatment</h4>
-            <p class="card-text">
-              {{card.text}}
-            </p>
-            <p class="red">
-              red from app.scss
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-          <div class="card-footer text-muted small">
-            {{card.footer}}
-          </div>
-        </div><!-- end card -->
+        <div class="card-wrapper col-lg-4">
+          <div class="card">
+            <div class="card-header">
+              {{card.title}}
+            </div>
+            <div class="card-block">
+              <h4 class="card-title">Special title treatment</h4>
+              <p class="card-text">
+                {{card.body}}
+              </p>
+              <p class="red">
+                red from app.scss
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+            <div class="card-footer text-muted small">
+              {{card.footer}}
+            </div>
+          </div><!-- end card -->
+        </div><!-- end card-wrapper -->
+
         {{/each}}
 
       </div><!-- end card deck -->
